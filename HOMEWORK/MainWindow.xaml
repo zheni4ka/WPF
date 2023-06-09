@@ -1,0 +1,91 @@
+﻿<Window x:Class="HOMEWORK.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HOMEWORK"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1100" Width="900">
+    <StackPanel>
+        <DockPanel Height="30" Background="Black" LastChildFill="False">
+            <Button Background="Blue" Content="⫸" FontSize="17" Foreground="White" BorderThickness="0" DockPanel.Dock="Left" Width="30"/>
+            <Button Background="Black" BorderThickness="0" DockPanel.Dock="Left" Content="Office 365" Foreground="White" FontSize="14" Width="90" FontFamily="Cascadia Code" FontStretch="Medium"/>
+            <Button Background="Black" BorderThickness="0" DockPanel.Dock="Left" Content="Share Point" Foreground="White" FontSize="14" Width="150" FontFamily="Cascadia Code" FontStretch="Medium"/>
+        </DockPanel>
+        
+        
+        <Grid Height="90">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="9*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Column="0" Name = "Logo"/>
+
+            <DockPanel Grid.Column="1">
+                <DockPanel DockPanel.Dock="Top" LastChildFill="False">
+                    <Label Grid.Row="0" DockPanel.Dock="Left" Content="Title" FontSize="40"/>
+                    <Label Grid.Row="0" DockPanel.Dock="Right" Content="⫍ Share Site" FontSize="20"/>
+                </DockPanel>
+                    <DockPanel Grid.Row="1" LastChildFill="False">
+                    <Label Content="Home" Foreground="Gray" DockPanel.Dock="Left"/>
+                    <Label Content="Documents" Foreground="Gray" DockPanel.Dock="Left"/>
+                    <Label Content="Papers" Foreground="Gray" DockPanel.Dock="Left"/>
+                    <Label Content="See" Foreground="Gray" DockPanel.Dock="Left"/>
+                    <Label Content="Comers" Foreground="Gray" DockPanel.Dock="Left"/>
+                    <Label Content="Edit" Foreground="Blue" FontSize="15" DockPanel.Dock="Left"/>
+                    <TextBox Text="Search..." Foreground="Gray" DockPanel.Dock="Right" Width="100"/>
+
+                </DockPanel>
+            </DockPanel>
+
+        </Grid>
+
+        <Grid Height="35">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="9*"/>
+            </Grid.ColumnDefinitions>
+            
+            
+            
+        </Grid>
+
+        <Grid Height="600">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  Width="*"/>
+                <ColumnDefinition  Width="0.5*"/>
+                <ColumnDefinition  Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Column="0" Grid.ColumnSpan="2"  Source="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Picture_icon_BLACK.svg/1200px-Picture_icon_BLACK.svg.png"/>
+            <TextBlock Grid.Row="0" Grid.Column="2" TextWrapping="Wrap">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </TextBlock>
+            <Image Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Source="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Picture_icon_BLACK.svg/1200px-Picture_icon_BLACK.svg.png"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" TextWrapping="Wrap">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </TextBlock>
+            <Image Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Source="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Picture_icon_BLACK.svg/1200px-Picture_icon_BLACK.svg.png"/>
+            <TextBlock Grid.Row="2" Grid.Column="2" TextWrapping="Wrap" Padding ="5">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </TextBlock>
+        </Grid>
+        <UniformGrid Columns="4" Rows="2" Height="330">
+            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Picture_icon_BLACK.svg/1200px-Picture_icon_BLACK.svg.png" Margin="20"/>
+            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Picture_icon_BLACK.svg/1200px-Picture_icon_BLACK.svg.png" Margin="20"/>
+            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Picture_icon_BLACK.svg/1200px-Picture_icon_BLACK.svg.png" Margin="20"/>
+            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Picture_icon_BLACK.svg/1200px-Picture_icon_BLACK.svg.png" Margin="20"/>
+            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Picture_icon_BLACK.svg/1200px-Picture_icon_BLACK.svg.png" Margin="20"/>
+            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Picture_icon_BLACK.svg/1200px-Picture_icon_BLACK.svg.png" Margin="20"/>
+            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Picture_icon_BLACK.svg/1200px-Picture_icon_BLACK.svg.png" Margin="20"/>
+            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Picture_icon_BLACK.svg/1200px-Picture_icon_BLACK.svg.png" Margin="20"/>
+        </UniformGrid>
+
+    </StackPanel>
+    
+</Window>

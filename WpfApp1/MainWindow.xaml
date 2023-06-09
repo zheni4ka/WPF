@@ -1,0 +1,80 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        WindowStyle="ToolWindow"
+        Title="MainWindow" Height="600" Width="450">
+        
+    <StackPanel>
+        <Grid Height="110">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="1.5*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="         Name" Margin="0, 10, 0, 10" FontSize="20"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="         Surname" Margin="0, 10, 0, 10" FontSize="20"/>
+            <TextBox x:Name="Name_To_Enter" Grid.Row="0" Grid.Column="1" Margin="10, 10" FontSize="20"/> 
+            <TextBox x:Name="Surname_To_Enter" Grid.Row="1" Grid.Column="1" Margin="10, 10" FontSize="20"/> 
+        </Grid>
+        <Grid Height="50">
+            <TextBox Text="Contact information here" Name = "contact_info" Margin="70, 10, 70, 10" FontSize="20"/>
+        </Grid>
+        <Grid Height="50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+                <Label Grid.Column="0" Content="Number of people : " FontSize="15" Margin="75, 10, 10, 10"/>
+            
+                <DockPanel Grid.Column="1" LastChildFill="False">
+                <Label Name = "people_number"  Content="1" Margin="10, 10, 10, 10" FontSize="15"/>
+                <RepeatButton Name = "moreBtn" Content="+" Click="moreBtn_Click" DockPanel.Dock="Right" Width="50" Height="30"/>
+                <RepeatButton Name = "lessBtn" Content="-" Click="lessBtn_Click" DockPanel.Dock="Right" Width="50" Height="30"/>
+            </DockPanel>
+        </Grid>
+        <Grid Height="25">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Choose the duration living in number" Margin="10,0,0,0"/>
+            <Label Content="Select type of number" Margin="50,0,0,0" Grid.Column="1"/>
+        </Grid>
+        <Grid Height="180">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Calendar x:Name="Data" SelectionMode="SingleRange"/>
+
+            <GroupBox FontSize="14" Width="150" Grid.Column="1">
+                <StackPanel Margin="5" Name = "types">
+                    <RadioButton>Econom</RadioButton>
+                    <RadioButton Margin="0,5,0,0">Standart</RadioButton>
+                    <RadioButton Margin="0,5,0,0">Luxe</RadioButton>
+                </StackPanel>
+            </GroupBox>
+        </Grid>
+        <Grid Height="40" Margin="0, 10, 0, 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <CheckBox Content="I accept the terms of use" Margin="80, 10, 0, 0" Click="accepted_terms_Click" Name = "accepted_terms" Grid.Column="1" FontSize="15"/>
+            <Button Content="Clear all" Click="Button_Click" ClickMode ="Press"  FontSize="20" Margin="5"/>
+        </Grid>
+        <Grid Height="50" Margin="50">
+            <Button Content="Accept an order" IsEnabled="false" Click="acceptBtn_Click" Margin="10" Name="acceptBtn"/>
+        </Grid>
+        
+        
+    </StackPanel>
+</Window>
